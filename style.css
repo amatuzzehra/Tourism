@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;  
+    overflow-x: hidden;
+}
+
+.bg-container {
+    background-image: url("https://w0.peakpx.com/wallpaper/133/262/HD-wallpaper-shifaaz-shamoon-beaches-blue-ocean-wave-thumbnail.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-heading {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+.button {
+    height: 36px;
+    width: 138px;
+    border-radius: 25px;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 24px; /* Smaller heading font size */
+    }
+    
+    .paragraph {
+        font-size: 14px; /* Smaller paragraph font size */
+    }
+    
+    .button {
+        height: 32px;
+        width: 120px; /* Smaller buttons */
+    }
+    
+    .card {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 20px;
+    }
+    
+    .paragraph {
+        font-size: 12px;
+    }
+    
+    .button {
+        height: 28px;
+        width: 100px;
+    }
+    
+    .card {
+        padding: 10px;
+    }
+}
+
+.button-green {
+    background-color: green;
+}
+
+.button-orange {
+    background-color: orange;
+}
+
+.favourite-places-bg-container {
+    background-image: url("https://img.freepik.com/premium-photo/mecca-city-saudi-arabia-mar-30-2024-makkah-clock-tower-abraj-al-bait-masjid-al-haram_845403-866.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 24px;
+}
+
+.favourite-places-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.favourite-places-card-container {
+    background-color: white;
+    padding: 16px; 
+    margin: 16px; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center;
+}
+
+.favourite-places-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.favourite-places-card-description {
+    font-family: "Roboto";
+    font-size: 13px;
+    color: #6c6b70;
+}
+
+.favourite-places-card-image {
+    height: 90px;
+    width: 80px;
+}
+
+/* for tablets */
+@media (max-width: 768px) {
+    .favourite-places-card-container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .favourite-places-card-heading {
+        font-size: 20px; /* Smaller heading font size */
+    }
+
+    .favourite-places-card-description {
+        font-size: 12px; /* Smaller description font size */
+    }
+
+    .favourite-places-card-image {
+        height: 70px;
+        width: 60px; /* Reduce image size for smaller screens */
+    }
+}
+
+/* Further adjustments for mobile screens */
+@media (max-width: 480px) {
+    .favourite-places-heading {
+        font-size: 24px; /* Smaller section heading */
+    }
+
+    .favourite-places-card-container {
+        padding: 12px;
+        margin: 8px; /* Smaller padding and margin */
+    }
+
+    .favourite-places-card-heading {
+        font-size: 18px;
+    }
+
+    .favourite-places-card-description {
+        font-size: 11px;
+    }
+
+    .favourite-places-card-image {
+        height: 60px;
+        width: 50px;
+    }
+} 
+
+.detailed-view-bg-container {
+    background-image: url("https://img.freepik.com/free-photo/gradient-colorful-hued-soap-bubble-black-background_23-2148235711.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 24px;
+}
+
+.detailed-view-heading {
+    color: white;
+    font-size: 28px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.detailed-view-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px; 
+    margin: 30px;
+}
+
+.carousel { 
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    overflow: hidden;
+    margin: auto; 
+}
+                                        
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+}
+
+.slide {
+    min-width: 100%; 
+    box-sizing: border-box;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.prev, next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.detailed-view-text-card-container {
+    padding: 16px;
+    background-color: white;
+}
+
+.detailed-view-text-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.detailed-view-text-card-description {
+    font-family: "Roboto"; 
+    font-size: 12px;
+    color: #6c6b70;
+}
+
